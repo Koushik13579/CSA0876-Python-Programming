@@ -1,0 +1,7 @@
+list1=list(input("Enter values of list 1: ").split())
+list2=list(input("Enter values of list 2: ").split())
+list1,list2=set(list1),set(list2)
+commonele=list(sorted(list1 & list2))
+uncomm=list1.symmetric_difference(list2)
+print("Uncommon elements: ",list(sorted(uncomm)))
+print("Common elements: ",commonele)

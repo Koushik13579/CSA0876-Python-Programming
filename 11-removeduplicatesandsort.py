@@ -1,0 +1,7 @@
+List1=input("Enter list of elements: ").split()
+newList=list(set(List1))
+decendList=sorted(newList,reverse=True)
+ascendList=sorted(newList)
+print("List after removing duplicates:",newList)
+print("list in decending order:",decendList)
+print("List in ascending order:",ascendList)
